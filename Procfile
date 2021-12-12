@@ -1,1 +1,1 @@
-web: node api/server.js && npm run sequelize db:seed:all
+web: node api/server.js && npx run sequelize db:seed:all
