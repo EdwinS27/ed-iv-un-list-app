@@ -8,7 +8,7 @@ import imgTrades from '../images/looking_4_trades.jpg'
 import imghousing from '../images/housing_bubble.jpeg'
 import '../App.css';
 import AuthButton from '../components/AuthButton';
-
+import CreatePostButton from '../components/CreatePost';
 function HomePage(props) {
   return (
     <div className="container-fluid">
@@ -39,11 +39,8 @@ function Menu() {
               <input className="col-lg-8 form-control me-2 d-none d-lg-block text-nowrap" type="search" placeholder="Search for everything here..." aria-label="Search" />
               <button className="col-lg-4 btn btn-outline-light d-none d-lg-block" type="submit">Search</button>
             </form>
-
             <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link text-nowrap text-white" href="/create-listing">create a post</a>
-              </li>
+              <CreatePostButton />
               <li className="nav-item">
                 <AuthButton />
                 {/* <a className="nav-link text-nowrap text-white" href="/login" >account</a> */}
