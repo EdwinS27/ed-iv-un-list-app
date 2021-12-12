@@ -70,35 +70,36 @@ npx sequelize-cli db:seed:all
 .
 ├── README.md
 ├── <strong>api</strong>
-│   ├── app.js
+│   ├── server.js
 │   ├── <strong>config</strong>
+│   └── <strong>server</strong>
+│   │   └── config.json
 │   │   └── config.json
 │   ├── <strong>controllers</strong>
-│   │   └── categories.js
 │   │   ├── appConfig.js
+│   │   └── auth.js
+│   │   └── categories.js
 │   │   ├── index.js
 │   │   └── posts.js
-│   │   └── users.js
-│   │   └── auth.js
+│   │   └── users.js.tak
 │   └── <strong>middlewares</strong>
 │   │   └── authentication.js
 │   └── <strong>models</strong>
 │       ├── category.js
 │       ├── index.js
-│       ├── user.js
 │       └── post.js
+│       ├── user.js
+│   └── <strong>seeders</strong>
+│       ├── 20211204083227-seeds.js
 │   └── <strong>routes</strong>
 │       ├── user.js
+│       ├── jobs.txt
 ├── <strong>client</strong>
 │   ├── README.md
 │   ├── package-lock.json
 │   ├── package.json
 │   ├── <strong>public</strong>
-│   │   ├── favicon.ico
 │   │   ├── index.html
-│   │   ├── logo192.png
-│   │   ├── logo512.png
-│   │   ├── manifest.json
 │   │   └── robots.txt
 │   └── <strong>src</strong>
 │       ├── App.css
