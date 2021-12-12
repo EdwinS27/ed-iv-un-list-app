@@ -71,10 +71,10 @@ const AuthProvider = ({ children }) => {
     });
   }
   // userid,title,city,img,zipcode,category,price,make,modelname, contact_email, description
-  const createPost = (userid, title, city, zipcode, category, price, make, modelname, contact_email, description) => {
+  const createPost = (userid, title, city, img, zipcode, category, price, make, modelname, contact_email, description) => {
     return fetch('/api/posts/', {
       method: 'POST',
-      body: JSON.stringify({userid, title, city, zipcode, category, price, make, modelname, contact_email, description}),
+      body: JSON.stringify({userid, title, city, img, zipcode, category, price, make, modelname, contact_email, description}),
       headers: {
         'content-type': 'application/json',
       }

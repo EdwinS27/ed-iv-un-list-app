@@ -58,7 +58,7 @@ class ListingForm extends React.Component {
         } = this.state;
         // this should work ?\
         // userid,title,city,img,zipcode,category,price,make,modelname, contact_email, description
-        auth.createPost(auth.user.userid, title, city, zipcode, category, price, make, modelname, auth.user.contact_email, description)
+        auth.createPost(auth.user.userid, title, city, img, zipcode, category, price, make, modelname, auth.user.contact_email, description)
         .then((success) => {
           this.setState({ redirectToReferrer: true });
         })
@@ -142,13 +142,13 @@ class ListingForm extends React.Component {
                             <label for="floatingSelect">Select your Category</label>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        {/* <div className="col-lg-3">
                             <div className="form-floating mb-4">
                                 <input type="text" className="form-control" id="floatingInput"/>
                                 <label for="floatingInput">Size / lb</label>
                             </div>
-                        </div>
-                        <div className="col-lg-3 ">
+                        </div> */}
+                        {/* <div className="col-lg-3 ">
                         <div class="form-floating mb-4">
                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                 <option selected>Condition</option>
@@ -158,7 +158,7 @@ class ListingForm extends React.Component {
                             </select>
                             <label for="floatingSelect">Select</label>
                             </div>
-                        </div>
+                        </div> */}
                 </div>
                 
                 <div className="row">
