@@ -124,12 +124,22 @@ function UserDashboard(props) {
               </button> */}
               </div>
           </div>
-  
+          <div>
+                <p>
+                    <span className="accountDetails"> First Name: </span> {auth.user.first_name }
+                    <span className="accountDetails"> Last Name: </span> { auth.user.last_name}
+                    <br></br>
+                    <span className="accountDetails"> Contact Email: </span> { auth.user.contact_email}
+                    <br></br>
+                    <br></br>
+                    <span className="accountDetails"> Zip Code: </span> { auth.user.zip}
+                    <br></br>
+                    <span className="accountDetails"> City: </span> { auth.user.city}
+                </p>
+            </div>
           <div className="container-md border border-warning ">
             <h2>Posting</h2>
-
           </div>
-  
           </main>
       </div>
       </div>

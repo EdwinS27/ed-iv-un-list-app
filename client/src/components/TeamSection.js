@@ -1,9 +1,6 @@
 
 import React from 'react';
-<<<<<<< Updated upstream
-=======
-import {Link} from 'react-dom'
->>>>>>> Stashed changes
+import {Link} from 'react-dom';
 import {ImLinkedin2} from 'react-icons/im'
 import {DiGithubBadge} from 'react-icons/di'
 import {MdOutlineApps} from 'react-icons/md'
@@ -16,15 +13,9 @@ function TeamSection({photo, name,title, statements, profiles}) {
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{title}</p>
         <p className="card-text"><small className="text-muted">{statements}</small></p>
-<<<<<<< Updated upstream
-        <a href={profiles} target= "_blank"><span ><ImLinkedin2 size="40" color="black"/></span></a>
-        <a href={profiles} target= "_blank"><span ><DiGithubBadge size="40" color="black"/></span></a>
-        <a href={profiles} target= "_blank"><span ><MdOutlineApps size="40" color="black"/></span></a>
-=======
-        <Link to={profiles} target= "_blank"><span ><ImLinkedin2 size="40" color="black"/></span></Link>
-        <Link to={profiles} target= "_blank"><span ><DiGithubBadge size="40" color="black"/></span></Link>
-        <Link to={profiles} target= "_blank"><span ><MdOutlineApps size="40" color="black"/></span></Link>
->>>>>>> Stashed changes
+        <Link href={profiles} target= "_blank"><span ><ImLinkedin2 size="40" color="black"/></span></Link >
+        <Link href={profiles} target= "_blank"><span ><DiGithubBadge size="40" color="black"/></span></Link >
+        <Link href={profiles} target= "_blank"><span ><MdOutlineApps size="40" color="black"/></span></Link >
       </div>
     </div>
   );

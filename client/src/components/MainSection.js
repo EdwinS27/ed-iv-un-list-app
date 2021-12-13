@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function MainSection({img, title, desc}) {
   return (
@@ -8,7 +7,7 @@ function MainSection({img, title, desc}) {
             <img src={img} className="card-img-top" alt="Jobs"/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
-                {/* <p class="card-text">{desc}</p> */}
+                <p className="card-text">{desc}</p>
             </div>
         </div>
     </div>

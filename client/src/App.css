@@ -36,3 +36,7 @@
   bottom: 0;
   width: 100%;
 }
+.accountDetails {
+  font-size: large;
+  font-weight: bold;
+}
