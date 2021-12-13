@@ -23,10 +23,10 @@ function UserDashboard(props) {
             <div className="position-sticky pt-3">
                 <ul className="nav flex-column">
                 <li className="nav-item ">
-                    <a className="nav-link active text-dark" aria-current="page" href="/">
+                    <Link className="nav-link active text-dark" aria-current="page" href="/">
                     <span data-feather="home "> </span>
                     <AiOutlineHome size="40"/>
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     {/* <Link className="nav-link" to={'#'} /> */}
@@ -74,28 +74,28 @@ function UserDashboard(props) {
                 </Link>
                 <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                 
-                <a className="link-secondary" href="#" aria-label="Add a new report">
+                <Link className="link-secondary" href="#" aria-label="Add a new report">
                     <span data-feather="plus-circle"></span>
-                </a>
+                </Link>
                 </h6>
                 <ul className="nav flex-column mb-2">
               {/* <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" href="#">
                   <span data-feather="file-text"></span>
                   Current month
-                  </a>
+                  </Link>
               </li>
               <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" href="#">
                   <span data-feather="file-text"></span>
                   Last quarter
-                  </a>
+                  </Link>
               </li>
               <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" href="#">
                   <span data-feather="file-text"></span>
                   Social engagement
-                  </a>
+                  </Link>
               </li> */}
                 <li className="nav-item">
                 <Link className='nav-link text-dark' to={'#'} >

@@ -35,10 +35,10 @@ const AuthProvider = ({ children }) => {
     });
   }
 
-  const signup = (firstName, lastName, contact_email, password, zip, city) => {
+  const signup = (firstName, lastName, contact_emailSignUp, passwordSignUp, zip, city) => {
     return fetch('/api/auth/signup', {
       method: 'POST',
-      body: JSON.stringify({firstName, lastName, contact_email, password, zip, city}),
+      body: JSON.stringify({firstName, lastName, contact_emailSignUp, passwordSignUp, zip, city}),
       headers: {
         'Content-Type': 'application/json',
       }

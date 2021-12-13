@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import {FcPicture} from 'react-icons/fc';
+// import {FcPicture} from 'react-icons/fc';
 import { AuthContext } from '../context/AuthContext'; // needed for posting and saving to a database
 
 
@@ -12,7 +12,7 @@ class ListingForm extends React.Component {
         title: "",
         price: 0,
         city: "",
-        // img: "",
+        img: "",
         zipcode: 0,
         make: "",
         modelname: "",
@@ -26,7 +26,7 @@ class ListingForm extends React.Component {
         .then(response => {
             return response.json();
         }).then(data => {
-        initialCategories = data.map((category) => {
+            initialCategories = data.map((category) => {
             return category
         });
         if(!this.state.pulled)

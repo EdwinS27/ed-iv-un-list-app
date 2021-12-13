@@ -5,13 +5,13 @@ module.exports = {
 
     await queryInterface.bulkInsert('categories',
      [{category: 'antiques'},
-     {category: 'appliances '},
+     {category: 'appliances'},
      {category: 'arts & crafts'},
      {category: 'atvs, utvs, snowmobiles'},
      {category: 'auto parts'},
      {category: 'auto wheels & tires'},
      {category: 'aviation'},
-     {category: 'barter '},
+     {category: 'barter'},
      {category: 'bicycle parts'},
      {category: 'boat parts'},
      {category: 'boats'},
@@ -27,14 +27,14 @@ module.exports = {
      {category: 'electronics'},
      {category: 'free stuff'},
      {category: 'garage & moving sales'},
-     {category: 'general for sale '},
+     {category: 'general for sale'},
      {category: 'health and beauty'},
      {category: 'heavy equipment'},
      {category: 'household items'},
      {category: 'jewelry'},
      {category: 'materials'},
      {category: 'motorcycle parts'},
-     {category: 'motorcycles/scooters '}
+     {category: 'motorcycles/scooters'}
   ]);
     /**
      * Add seed commands here.

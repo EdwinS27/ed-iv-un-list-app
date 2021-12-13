@@ -48,7 +48,7 @@ if(process.env.NODE_ENV==='production') {
 // update DB tables based on model updates. Does not handle renaming tables/columns
 // NOTE: toggling this to true drops all tables (including data)
 db.sequelize.sync({ force: false });
-// start up the server
+// start up the       
 if(PORT) {
   app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 } else {
