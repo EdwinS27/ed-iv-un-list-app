@@ -15,7 +15,6 @@ import ListingForm from './components/ListingForm';
 import ListingCard from './components/ListingCard';
 import { AuthProvider } from './context/AuthContext';
 import PersonalSafetyTips from './pages/PersonalSafetyTips';
-// import Test from './pages/test'
 import './App.css';
 
 class App extends React.Component {
@@ -37,7 +36,6 @@ render() {
           <Route path="/dashboard" component={ UserDashboard }/>
           <Route path="/create-listing" component={ListingForm}/>
           <Route path="/posting-card" component={ListingCard} />
-          {/* <Route path="/test" component={Test} /> */}
           </ Switch>
           <Footer />
         </Router>
